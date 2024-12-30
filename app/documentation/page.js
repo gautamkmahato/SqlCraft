@@ -87,7 +87,7 @@ export default function Documentation() {
         <section id="getting-started" className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Getting Started</h2>
           <ol className="list-decimal pl-6 text-gray-700">
-            <li className="mb-2">Clone the repository from GitHub: <code>git clone &lt;repo-url&gt;</code></li>
+            <li className="mb-2">Clone the repository from GitHub: <code>git clone &lt;https://github.com/gautamkmahato/Sql-Editor-App&gt;</code></li>
             <li className="mb-2">Navigate to the project folder: <code>cd project-folder</code></li>
             <li className="mb-2">Install dependencies: <code>npm install</code></li>
             <li>Start the development server: <code>npm run dev</code></li>

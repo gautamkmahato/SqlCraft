@@ -29,7 +29,7 @@ export default function Home() {
         <div className="space-x-4 mb-10">
           {/* GitHub Button */}
           <Link 
-            href="https://github.com" 
+            href="https://github.com/gautamkmahato/Sql-Editor-App" 
             target="_blank" 
             className="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900"
           >
