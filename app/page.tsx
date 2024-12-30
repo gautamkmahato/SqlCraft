@@ -1,101 +1,180 @@
-import Image from "next/image";
+import { Star, Github, Info, Database, LayoutDashboard, Terminal, Code, GitBranch, Zap } from 'lucide-react';
+import GeometricBackground from './_components/GeometricBackground';
+import test from '../public/assets/SCREEN.jpg'
+import Link from 'next/link';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    
+  return ( 
+    <div className="min-h-screen bg-white">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+      {/* Hero Section */}
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-32">
+        {/* GeometricBackground */}
+        <div className="absolute inset-0 overflow-hidden">
+          <GeometricBackground />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        
+        <div className="relative text-center">  
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
+          Simplify Database Management
+        </h2>
+          <p className="text-lg text-gray-700 mb-8">
+          An open-source SQLite Online Editor for developers. Create, update, delete databases, manage tables, execute SQL queries, and much more.
+        </p>
+
+
+        <div className="space-x-4 mb-10">
+          {/* GitHub Button */}
+          <Link 
+            href="https://github.com" 
+            target="_blank" 
+            className="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900"
+          >
+            <Github className="w-5 h-5 mr-2" />
+            GitHub Repository
+          </Link>
+          
+          {/* Learn More Button */}
+          <Link 
+            href="/documentation" 
+            className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-800 rounded-lg shadow-md hover:bg-gray-300"
+          >
+            <Info className="w-5 h-5 mr-2" />
+            Learn More
+          </Link>
+        </div>
+
+
+          {/* Testimonials */}
+          <div className="flex justify-center items-center mb-16">
+            <div className="flex -space-x-2">
+              <div className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white" />
+              <div className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white" />
+              <div className="w-8 h-8 rounded-full bg-gray-400 border-2 border-white" />
+            </div>
+            <div className="flex items-center ml-4">
+              <Star className="w-4 h-4 text-yellow-400 fill-current" />
+              <span className="ml-1 font-semibold">4.8+</span>
+              <span className="ml-2 text-gray-600">From 40+ Users</span>
+            </div>
+          </div>
+
+          {/* Product Preview */}
+          <div className="relative mx-auto w-[70%] mt-12">
+            <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+            <div className="flex items-center justify-center py-8 bg-gray-100">
+          {/* Outer Border (Laptop Frame) */}
+          <div className="relative bg-gray-400 rounded-xl p-2 shadow-lg w-[800px] h-[500px]">
+            {/* Inner Border */}
+            <div className="bg-black rounded-lg w-full h-full p-4">
+              {/* Screen (Image) */}
+              <div className="w-full h-full rounded-md bg-black">
+                <div 
+                  className="w-full h-full bg-cover bg-center rounded-md" 
+                  style={{
+                    backgroundImage: `url(${test.src})`,
+                    backgroundSize: 'contain', // Fit the image
+                    backgroundRepeat: 'no-repeat', // Avoid repetition
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+{/* Features Section */}
+<section id="features" className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12">
+        <div className="space-y-8">
+          <div className="flex items-start space-x-4">
+            <Database className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">Database Management</h3>
+              <p className="text-gray-700">
+                Select a database folder, create new databases, and manage existing ones effortlessly.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <LayoutDashboard className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">Dashboard</h3>
+              <p className="text-gray-700">
+                Insert, update, and delete data directly from the interactive dashboard.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <Terminal className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">SQL Editor</h3>
+              <p className="text-gray-700">
+                Execute SQL queries in a powerful and easy-to-use SQL editor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-8">
+          <div className="flex items-start space-x-4">
+            <Code className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">Open Source</h3>
+              <p className="text-gray-700">
+                Clone the repository from GitHub and start using the tool immediately.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <GitBranch className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">Version Control</h3>
+              <p className="text-gray-700">
+                Manage your database changes effectively with seamless version control.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start space-x-4">
+            <Zap className="w-8 h-8 text-blue-600" />
+            <div>
+              <h3 className="text-xl font-bold text-gray-800">Fast & Efficient</h3>
+              <p className="text-gray-700">
+                Perform database operations quickly with an intuitive user interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section id="get-started" className="bg-white py-16 text-center text-gray-800">
+        <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+        <p className="text-gray-700 mb-8">
+          Clone the repository, run the app, and streamline your SQLite database management today.
+        </p>
+        {/* GitHub Button */}
+        <Link 
+            href="https://github.com" 
+            target="_blank" 
+            className="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900"
+          >
+            <Github className="w-5 h-5 mr-2" />
+            GitHub Repository
+          </Link>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-6 text-center">
+        <p>&copy; 2024 SQLite Online Editor. All rights reserved.</p>
       </footer>
+
     </div>
   );
-}
+};

@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SQLCraft
 
-## Getting Started
+SQLCraft is an open-source web application that allows you to manage SQLite databases through an intuitive user interface. With this tool, you can:
 
-First, run the development server:
+- Select and manage your database folder.
+- Create, update, and delete databases.
+- Create and delete tables.
+- Check table schemas.
+- Execute SQL queries with a SQL editor.
+- Manage table data: insert, update, and delete rows.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Anyone can use this application. Simply clone the repository, install dependencies, and run the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![alt text](https://raw.githubusercontent.com/gautamkmahato/sqlite-editor/refs/heads/main/sqliteUI/public/assets/SCREEN.jpg)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Database Management:**
+  - Select a folder containing your databases.
+  - Create new databases.
+  - Update or delete existing databases.
 
-To learn more about Next.js, take a look at the following resources:
+- **Table Operations:**
+  - Create new tables.
+  - View table schemas.
+  - Delete tables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **SQL Query Execution:**
+  - Write and execute SQL queries using the built-in SQL editor.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Data Dashboard:**
+  - Insert, update, and delete table data directly from the dashboard.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation and Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow these steps to install and run the SQLCraft:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 16 or higher)
+- npm (comes with Node.js)
+- Git
+
+### Steps to Install
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/sqlite-online-editor.git
+   cd sqlite-online-editor
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in Browser:**
+
+   Open your browser and navigate to:
+
+   ```
+   http://localhost:3000
+   ```
+
+### Step-by-Step Guide
+
+1. **Select a Database Folder:**
+   - Click the folder picker to select a folder containing your databases.
+
+2. **Create a New Database:**
+   - Use the `Create Database` button to add a new database file.
+
+3. **Manage Databases:**
+   - Select a database to update or delete it.
+
+4. **Work with Tables:**
+   - Create new tables or delete existing ones.
+   - View the schema of any table.
+
+5. **Use the SQL Editor:**
+   - Write and execute custom SQL queries using the built-in editor.
+
+6. **Dashboard for Data Management:**
+   - Insert, update, or delete rows directly from the dashboard.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you have ideas or improvements, feel free to:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+## Contact
+
+For questions or support, please reach out via:
+
+- GitHub Issues: [Create an Issue](https://github.com/your-username/sqlite-online-editor/issues)
+- Email: your-email@example.com
